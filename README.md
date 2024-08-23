@@ -5,7 +5,7 @@ All proto files for Aristogram gRPC services.
 
 Add module to your application using the following command:
 ```shell
-go mod github.com/aristogram/protos
+go get github.com/aristogram/protos
 ```
 
 ### Code generate
