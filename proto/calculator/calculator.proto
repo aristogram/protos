@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package calculator;
+
+option go_package = "aristogram.calc.v1;calcv1";
+
+service Calc {
+  rpc CalcExpr (ExpressionRequest) returns (Answer);
+}
+
+message ExpressionRequest {
+  string expr = 1; // Expression to calculate
+  string jwtToken = 2; // JWT token
+}
+
+message Answer {
+  string answer = 1; // Calculated expression
+}
